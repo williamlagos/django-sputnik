@@ -8,3 +8,8 @@ staticfiles
 *sqlite3*
 output
 static
+__pycache__
+*.egg-info
+dist
+build
+.venv
