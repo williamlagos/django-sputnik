@@ -1,3 +1,6 @@
+from django.conf import settings
+from django.shortcuts import render
+from django.template import Context, Template
 from django.views.generic.base import TemplateView, View
 
 class HomePageView(TemplateView):
