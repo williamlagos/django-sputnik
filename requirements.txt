@@ -4,6 +4,7 @@ chardet==3.0.4
 Django>=3.0.7
 django-distill==1.7
 future==0.18.2
+gunicorn==25.1.0
 idna==2.9
 pytz==2020.1
 requests==2.23.0
