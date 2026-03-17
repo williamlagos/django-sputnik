@@ -1,17 +1,15 @@
 # Sputnik - Django Static Page Generator
 
-A static page generator built with Django and [django-distill](https://github.com/meeb/django-distill), packaged as a standard Python package.
+A static page generator built with Django and [django-distill](https://github.com/meeb/django-distill).
 
-## Installation
+## Setup
 
-```bash
-pip install .
-```
-
-Or in editable mode for development:
+Clone the repository and install dependencies:
 
 ```bash
-pip install -e .
+git clone https://github.com/williamlagos/django-sputnik.git
+cd django-sputnik
+pip install -r requirements.txt
 ```
 
 ## Development
