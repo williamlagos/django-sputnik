@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sputnik"
+version = "1.0.0"
+description = "Django static page generator"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "Django>=4.2",
+    "django-distill>=3.0",
+    "pytz>=2023.3",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+sputnik-manage = "manage:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sputnik*"]
+
+[tool.setuptools.package-data]
+"sputnik" = [
+    "templates/**/*.html",
+    "public/**/*",
+    "locale/**/*",
+]
